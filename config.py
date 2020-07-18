@@ -1,14 +1,16 @@
 DataSetPath = './data/focusight1_round1_train_part1/OK_Images/'
 DataSetPath_ = './data/focusight1_round1_train_part1/TC_images/'
-ModelPath = './model/gen2.ph'
+ModelPath = './model/gen.ph'
 
-epoch = 200
+lr = 0.003
+
+epoch = 500
 
 d_steps = 2
 
 g_steps = 1
 
-batch_size = 32
+batch_size = 64
 
 test_batch_size = 64
 
