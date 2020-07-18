@@ -96,7 +96,7 @@ if __name__ == '__main__':
                 g_error_bce = loss(d_g_fake_decision, torch.ones([config.batch_size, 1]).to(device))
                 g_error_ssim = 1 - sloss(gen_data, OK_img.float().to(device))
                 g_error_l1 = l1loss(gen_data, OK_img.float().to(device))
-                g_error = g_error_bce + g_error_ssim * 50 + g_error_l1 * 50
+                g_error = g_error_bce + g_error_ssim * 10 + g_error_l1 * 10
                 # g_error = (0.7*(1 - sloss(gen_data, item[1].float().to(device))) + 0.3*loss(d_g_fake_decision, torch.ones([config.batch_size, 1]).to(device)))
                 g_error.backward()
 

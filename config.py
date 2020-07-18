@@ -2,7 +2,7 @@ DataSetPath = './data/focusight1_round1_train_part1/OK_Images/'
 DataSetPath_ = './data/focusight1_round1_train_part1/TC_images/'
 ModelPath = './model/gen.ph'
 
-lr = 0.003
+lr = 0.0002
 
 epoch = 500
 
